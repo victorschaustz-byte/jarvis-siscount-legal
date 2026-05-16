@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade — JARVIS SisCount</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #555;
+    --primary: #22c55e;
+    --border: #e5e7eb;
+    --code-bg: #f3f4f6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--fg);
+    background: var(--bg);
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 48px 24px;
+  }
+  h1 { font-size: 2rem; margin-bottom: 0.25rem; border-bottom: 2px solid var(--primary); padding-bottom: 0.5rem; }
+  h2 { font-size: 1.35rem; margin-top: 2rem; color: #064e3b; }
+  h3 { font-size: 1.1rem; margin-top: 1.5rem; }
+  p, ul, ol, table { margin: 0.75rem 0; }
+  ul, ol { padding-left: 1.5rem; }
+  li { margin: 0.25rem 0; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { border: 1px solid var(--border); padding: 0.5rem 0.75rem; text-align: left; vertical-align: top; }
+  th { background: var(--code-bg); }
+  code { background: var(--code-bg); padding: 0.1rem 0.35rem; border-radius: 3px; font-size: 0.9em; }
+  a { color: var(--primary); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin-top: 0.25rem; }
+  .footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); font-size: 0.85rem; color: var(--muted); }
+  .badge { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.8em; background: #ecfdf5; color: #065f46; border: 1px solid #6ee7b7; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Política de Privacidade — JARVIS SisCount</h1>
+<p class="meta">Última atualização: 15 de maio de 2026 · <span class="badge">LGPD compliant</span></p>
+
+<h2>1. Quem somos</h2>
+<p>JARVIS SisCount é uma ferramenta operacional B2B usada para gerenciar a presença digital da SisCount Sistemas Gerenciais no Instagram e Facebook. A ferramenta é operada conjuntamente por duas empresas sob contrato de prestação de serviços:</p>
+
+<table>
+<thead>
+<tr><th>Empresa</th><th>Papel</th><th>CNPJ</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Valute Consultoria Contábil &amp; Tributária Ltda</strong><br>(Operadora técnica)</td>
+  <td>Desenvolve e mantém a aplicação. Responsável pela infraestrutura, código, segurança técnica e processamento.</td>
+  <td>40.266.104/0001-67</td>
+</tr>
+<tr>
+  <td><strong>SisCount Sistemas Gerenciais Ltda</strong><br>(Controladora dos dados)</td>
+  <td>Detentora das contas digitais (Instagram <code>@siscountsistemas</code>, Página Facebook SisCount Sistemas Gerenciais). Decide o uso editorial dos canais.</td>
+  <td>42.721.413/0001-05</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Encarregado de Proteção de Dados (DPO):</strong> Victor Schaustz — <a href="mailto:victor.schaustz@valuteconsultoria.com">victor.schaustz@valuteconsultoria.com</a></p>
+
+<h2>2. Quais dados coletamos</h2>
+<p>A ferramenta acessa dados via Instagram Graph API e Marketing API da Meta Platforms, com autorização expressa da SisCount, nos seguintes escopos:</p>
+
+<h3>2.1 Dados da conta Instagram Business <code>@siscountsistemas</code></h3>
+<ul>
+  <li>ID da conta, nome de usuário, foto de perfil, contagem de seguidores</li>
+  <li>Métricas agregadas: impressões, alcance, visualizações de perfil, crescimento de seguidores</li>
+  <li>Posts publicados, comentários recebidos, mensagens diretas (DMs)</li>
+</ul>
+
+<h3>2.2 Dados da Página Facebook SisCount Sistemas Gerenciais</h3>
+<ul>
+  <li>ID, nome e categoria da Página</li>
+  <li>Metadados de engajamento agregados</li>
+</ul>
+
+<h3>2.3 Dados de campanhas publicitárias (Marketing API)</h3>
+<ul>
+  <li>IDs e configurações de campanhas, conjuntos de anúncios e anúncios criados pela ferramenta</li>
+  <li>Métricas agregadas: gasto, impressões, cliques, CTR, CPC</li>
+</ul>
+
+<h3>2.4 Dados de mensagens e comentários de terceiros</h3>
+<p>Quando um usuário do Instagram envia DM ou comenta em posts da <code>@siscountsistemas</code>, recebemos:</p>
+<ul>
+  <li>Conteúdo da mensagem ou comentário</li>
+  <li>ID de usuário Instagram (pseudonimizado pela Meta)</li>
+  <li>Timestamp</li>
+</ul>
+
+<p><strong>Não coletamos:</strong> endereço de e-mail, telefone, localização, dados pessoais sensíveis (cor, religião, opção sexual, saúde) de seguidores ou terceiros.</p>
+
+<h2>3. Permissions Meta utilizadas</h2>
+<p>A ferramenta solicita os seguintes escopos OAuth:</p>
+<ul>
+  <li><code>instagram_basic</code> — leitura de metadados da conta business</li>
+  <li><code>instagram_content_publish</code> — publicação de posts orgânicos</li>
+  <li><code>instagram_manage_messages</code> — leitura e envio de DMs</li>
+  <li><code>instagram_manage_comments</code> — leitura e moderação de comentários</li>
+  <li><code>instagram_manage_insights</code> — leitura de métricas agregadas</li>
+  <li><code>pages_show_list</code>, <code>pages_read_engagement</code> — dependências do Instagram Graph API</li>
+  <li><code>business_management</code> — validação de relação entre Business Managers</li>
+  <li><code>ads_management</code>, <code>ads_read</code> — criação e leitura de campanhas pagas</li>
+</ul>
+<p>Cada escopo é solicitado apenas quando estritamente necessário para a funcionalidade descrita.</p>
+
+<h2>4. Como usamos seus dados</h2>
+<table>
+<thead>
+<tr><th>Dado</th><th>Finalidade</th></tr>
+</thead>
+<tbody>
+<tr><td>Posts e métricas agregadas</td><td>Geração de relatórios editoriais para a equipe de marketing SisCount</td></tr>
+<tr><td>DMs recebidas</td><td>Triagem automática de leads e respostas com templates pré-aprovados dentro da janela de 24h da Meta</td></tr>
+<tr><td>Comentários</td><td>Moderação automatizada (ocultar spam, responder leads com templates)</td></tr>
+<tr><td>Dados de campanhas</td><td>Criação de campanhas em estado pausado para revisão humana, e relatórios de performance</td></tr>
+</tbody>
+</table>
+<p><strong>Nenhum dado é vendido, alugado ou compartilhado com terceiros</strong> fora do escopo deste contrato.</p>
+
+<h2>5. Onde armazenamos</h2>
+<p>Os dados são armazenados em banco PostgreSQL hospedado no <strong>Supabase</strong>, região <strong>South America (São Paulo)</strong> (<code>sa-east-1</code>), em conformidade com a Lei Geral de Proteção de Dados Pessoais (LGPD — Lei 13.709/2018).</p>
+<p>Campos sensíveis (conteúdo de mensagens) são armazenados com encriptação em camada de aplicação.</p>
+
+<h2>6. Por quanto tempo retemos</h2>
+<table>
+<thead>
+<tr><th>Dado</th><th>Retenção</th></tr>
+</thead>
+<tbody>
+<tr><td>Conteúdo de mensagens diretas (DMs)</td><td><strong>90 dias</strong>, depois deletados automaticamente</td></tr>
+<tr><td>Conteúdo de comentários</td><td><strong>90 dias</strong></td></tr>
+<tr><td>Logs de moderação (auditoria)</td><td>Indefinido (apenas IDs e ações, sem conteúdo)</td></tr>
+<tr><td>Métricas agregadas</td><td>Indefinido (sem dados pessoais)</td></tr>
+<tr><td>Metadados de posts publicados</td><td>365 dias</td></tr>
+<tr><td>Logs de campanhas (auditoria financeira)</td><td>Indefinido (compliance contábil/fiscal)</td></tr>
+<tr><td>Tokens de acesso Meta</td><td>Renovados a cada 60 dias; deletados na revogação</td></tr>
+</tbody>
+</table>
+
+<h2>7. Direitos do titular dos dados (LGPD Art. 18)</h2>
+<p>Conforme a LGPD, você tem direito a:</p>
+<ul>
+  <li>Confirmação de existência de tratamento</li>
+  <li>Acesso aos seus dados</li>
+  <li>Correção de dados incompletos ou desatualizados</li>
+  <li>Anonimização, bloqueio ou eliminação de dados desnecessários</li>
+  <li>Portabilidade</li>
+  <li>Eliminação de dados tratados com seu consentimento</li>
+  <li>Revogação do consentimento</li>
+  <li>Informações sobre compartilhamento (não fazemos compartilhamentos)</li>
+  <li>Oposição ao tratamento</li>
+</ul>
+<p><strong>Para exercer qualquer um destes direitos:</strong> acesse a página de <a href="data-deletion-jarvis-siscount.html">Instruções de Exclusão de Dados</a> ou envie e-mail para <a href="mailto:victor.schaustz@valuteconsultoria.com">victor.schaustz@valuteconsultoria.com</a>. Responderemos em até 15 dias úteis.</p>
+
+<h2>8. Cookies e tracking</h2>
+<p>A ferramenta <strong>não opera um site público</strong> — não usamos cookies, pixels de tracking, ou identificadores publicitários no contexto da operação JARVIS SisCount.</p>
+
+<h2>9. Crianças</h2>
+<p>A ferramenta não é destinada a menores de 18 anos.</p>
+
+<h2>10. Segurança</h2>
+<p>Adotamos medidas técnicas e administrativas razoáveis para proteger os dados:</p>
+<ul>
+  <li>Criptografia em trânsito (TLS 1.3)</li>
+  <li>Criptografia de campos sensíveis em repouso</li>
+  <li>Controle de acesso baseado em roles (RBAC)</li>
+  <li>Logs de auditoria de acesso</li>
+  <li>Revisão periódica de permissões</li>
+</ul>
+
+<h2>11. Compartilhamento com a Meta</h2>
+<p>Como a ferramenta opera sobre as APIs da Meta Platforms (Instagram Graph API, Marketing API), os dados originados na plataforma da Meta seguem também a <a href="https://www.facebook.com/about/privacy/" target="_blank" rel="noopener">Política de Dados da Meta</a> e a <a href="https://developers.facebook.com/devpolicy/" target="_blank" rel="noopener">Política da Plataforma</a>. Não temos controle sobre a coleta de dados pela própria Meta.</p>
+
+<h2>12. Alterações nesta política</h2>
+<p>Esta política pode ser revisada periodicamente. A data de "Última atualização" no topo refletirá a versão vigente. Alterações materiais serão comunicadas à SisCount pelo canal contratual padrão.</p>
+
+<h2>13. Contato</h2>
+
+<p><strong>Operadora técnica:</strong></p>
+<ul>
+  <li>Valute Consultoria Contábil &amp; Tributária Ltda</li>
+  <li>CNPJ: 40.266.104/0001-67</li>
+  <li>Av. C 1, S/N, Quadra 27 Lote 15, Jardim Boa Esperança, Aparecida de Goiânia — GO, CEP 74.960-315</li>
+  <li>E-mail: <a href="mailto:victor.schaustz@valuteconsultoria.com">victor.schaustz@valuteconsultoria.com</a></li>
+</ul>
+
+<p><strong>Controladora dos dados:</strong></p>
+<ul>
+  <li>SisCount Sistemas Gerenciais Ltda</li>
+  <li>CNPJ: 42.721.413/0001-05</li>
+  <li>Av. C 1, S/N, Quadra 27 Lote 15, Jardim Boa Esperança, Aparecida de Goiânia — GO, CEP 74.960-315</li>
+</ul>
+
+<div class="footer">
+  <p><strong>Esta política está em conformidade com:</strong></p>
+  <ul>
+    <li>Lei Geral de Proteção de Dados Pessoais (LGPD) — Lei 13.709/2018</li>
+    <li><a href="https://developers.facebook.com/terms/" target="_blank" rel="noopener">Meta Platform Terms</a></li>
+    <li><a href="https://developers.facebook.com/devpolicy/" target="_blank" rel="noopener">Meta Developer Policies</a></li>
+  </ul>
+  <p><a href="index.html">← Voltar à página inicial</a></p>
+</div>
+
+</div>
+</body>
+</html>
